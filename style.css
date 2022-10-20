@@ -25,6 +25,9 @@ div.icon p{
     line-height: 40px;
 }
 div.main{
+    
+    background-color: rgb(228, 234, 238);
+    
     margin-left: 30%;
     margin-top: 5%;
     margin-right: 30%;
@@ -34,24 +37,56 @@ div.main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+section{
+    opacity: 0;
+	margin-top: 100px;
+	animation: 1s slidefade 1s forwards;
+}
+
+@keyframes slidefade {
+	100% {
+		opacity: 1;
+		margin: 0;
+	}
+}
     
 
+
+div.outer{
+    display:flex;
+    flex-direction: column;
 }
-div.input-group  {
-    margin-left: 10px;
-    margin-right: 10px;
+div.input-group {
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 5px;
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: row;
+    align-content: space-around; 
+    justify-items: space-between;
+    width:500px;
     
 }
-div.password{
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 5px;
-    width: fit-content;
+div.inner{
+    margin-top: 10px;
     display: flex;
-    flex-direction: row-reverse ;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+    /* margin-right: 10px;*/
+}
+
+  div.invalid-feedback{
+    dispaly:flex;
+  }  
+    
 
 
+
+div.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
 }
